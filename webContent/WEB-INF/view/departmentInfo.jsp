@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello World - Processed</title>
+<title>Student Department Information</title>
 </head>
 <body>
+<br></br>	
 ::: Hello New Student :::
-	<br></br>	
-	Student Name : ${param.studentName}
+
+	Student Department : ${param.studentDep}
 	
 	<hr>
 	<a href="showForm">Form Page</a>

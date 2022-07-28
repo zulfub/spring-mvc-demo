@@ -3,8 +3,9 @@
 <head><title>Skuld</title></head>
 <body>
 <h2>Spring MVC First Try</h2>
-<hr>
-<a href ="showForm">New Student Form</a>
-</hr>
+<hr/>
+<a href ="studentNameForm/showForm">New Student Name Form</a>
+<hr/>
+<a href = "studentDepForm/showForm">New Student Department Form</a>
 </body>
 </html>
