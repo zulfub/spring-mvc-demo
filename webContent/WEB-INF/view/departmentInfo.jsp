@@ -9,11 +9,11 @@
 
 	Student Department : ${param.studentDep}
 	
-	<hr>
+	<hr/>
 	<a href="showForm">Form Page</a>
-	</hr>
-	<hr>
+	<br>
+	<hr/>
 	<a href="/spring-mvc-demo/">Main Menu</a>
-	</hr>
+	<br>
 </body>
 </html>

@@ -42,7 +42,7 @@ public class NameController {
 	
 	@RequestMapping("/getNameLastName")
 	public String getNameLastName(@RequestParam("studentNameInfos") String nameInfo , Model model) {
-		//Read Data from Form using Request Param annotation
+		//Read Data from Form using RequestParam annotation
 		
 		//Convert Data to UpperCase
 		nameInfo = nameInfo.toUpperCase();
