@@ -8,7 +8,18 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String codingLang;
-	private LinkedHashMap<String,codingLang> 
+	private LinkedHashMap<String,String>  countryOptions;
+	
+	public Student() {
+		// No-arg constructor
+		countryOptions = new LinkedHashMap<>();
+		
+		countryOptions.put("TR", "Turkey");
+		countryOptions.put("IND", "India");
+		countryOptions.put("JPN", "Japon");
+		countryOptions.put("USA", "United States America");
+		countryOptions.put("DE", "Germany");
+	}
 	
 	//Auto Generated Getters and Setters
 	//firstName
@@ -30,6 +41,10 @@ public class Student {
 	public String getCountry() {
 		return country;
 	}
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+
 	public void setCountry(String country) {
 		this.country = country;
 	}

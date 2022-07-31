@@ -14,10 +14,7 @@
 	<br>
 	<hr>
 	<form:select path="country">
-		<form:option value="Turkey"></form:option> 
-		<form:option value="India"></form:option>
-		<form:option value="Japon"></form:option>
-		<form:option value="USA"></form:option>
+		<form:options items="${student.countryOptions}"/>
 	
 	</form:select>
 	<br>
