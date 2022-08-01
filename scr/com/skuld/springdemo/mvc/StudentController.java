@@ -25,7 +25,8 @@ public class StudentController {
 	public String processForm(@ModelAttribute("student") Student student) {
 	//ModelAttribute annotation for access to data
 		//log the input data
-		System.out.println("Student Name ::: " + student.getFirstName() + " " + student.getLastName());
+		System.out.println("Student Name ::: " + student.getFirstName() + " " + student.getLastName() + " Country Selected by student ::: " + student.getCountry() 
+		+ "Favorite Coding Language ::: " + student.getCodingLang() + "Student's Operating System List ::: "+ student.getOperatingSystems());
 		return "student-confirmation";
 	}
 }
