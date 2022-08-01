@@ -3,14 +3,19 @@
 <html>
 <head>
 <title>Skuld - MVC</title>
+<style type="text/css">
+	.error {color:red}
+</style>
 </head>
 <body>
 <form:form action="processForm" modelAttribute="student">
 	
-	First Name ::: <form:input path="firstName"/>
+	First Name * ::: <form:input path="firstName"/>
+	<form:errors path="firstName" cssClass="error"/>
 	<br>
 	<hr>
-	Last Name ::: <form:input path="lastName"/>
+	Last Name * ::: <form:input path="lastName"/>
+	<form:errors path="lastName" cssClass="error"/>
 	<br>
 	<hr>
 	Country :::
@@ -26,14 +31,10 @@
 	<br>
 	<hr>
 	Operating Systems experienced with :::
-	<br>
-	<hr>
+	<br><br>
 	Linux <form:checkbox path="operatingSystems" value="GUI"/>
-	<hr>
 	Windows <form:checkbox path="operatingSystems" value="WNDS"/>
-	<hr>
 	MACOS <form:checkbox path="operatingSystems" value="MACOS"/>
-	<hr>
 	<br>
 	<hr>	
 	<input type="submit" value="Submit"/> 

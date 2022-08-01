@@ -1,7 +1,11 @@
 package com.skuld.springdemo.mvc;
 
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,11 +26,18 @@ public class StudentController {
 	
 	//Method for Process Form
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("student") Student student) {
+	public String processForm(@Valid @ModelAttribute("student") Student student , BindingResult bindingResult) {
 	//ModelAttribute annotation for access to data
 		//log the input data
-		System.out.println("Student Name ::: " + student.getFirstName() + " " + student.getLastName() + " Country Selected by student ::: " + student.getCountry() 
-		+ "Favorite Coding Language ::: " + student.getCodingLang() + "Student's Operating System List ::: "+ student.getOperatingSystems());
-		return "student-confirmation";
+		System.out.println("Student Name ::: " + student.getFirstName() + " " + student.getLastName() + "\nCountry Selected by student ::: " + student.getCountry() 
+		+ "\nFavorite Coding Language ::: " + student.getCodingLang() + "\nStudent's Operating System List ::: "+ student.getOperatingSystems().toString());
+		
+		
+		if(bindingResult.hasErrors()) {
+			return "student-form";
+		}
+		else {
+			return "student-confirmation";
+		}
 	}
 }

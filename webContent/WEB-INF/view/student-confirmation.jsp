@@ -12,9 +12,9 @@
  <br>
  	Operating with Know-How ::: 
  	<ul>
- 		<C:forEach var="temp" items=" ${student.operatingSystems}"></C:forEach>
- 		
+ 		<C:forEach var="temp" items=" ${student.operatingSystems}"> 		
  		<li>${temp}</li>
+ 		</C:forEach>
  	</ul>
  <br>
  

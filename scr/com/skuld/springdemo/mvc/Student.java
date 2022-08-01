@@ -2,9 +2,18 @@ package com.skuld.springdemo.mvc;
 
 import java.util.LinkedHashMap;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Student {
 
+	//Validation Rule applied
+	@NotNull(message = "is required")
+	@Size(min=3,message = "can not be smaller than 3 char")
 	private String firstName;
+	//LastName is Required
+	@NotNull(message = "can not be Null")
+	@Size(min=4,message = "can not be smaller than 4 char")
 	private String lastName;
 	private String country;
 	private String codingLang;
