@@ -14,7 +14,7 @@
  	<ul>
  		<C:forEach var="temp" items=" ${student.operatingSystems}"></C:forEach>
  		
- 		<li>${temp }</li>
+ 		<li>${temp}</li>
  	</ul>
  <br>
  
