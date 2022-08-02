@@ -4,10 +4,16 @@
 <body>
 <h2>Spring MVC First Try</h2>
 <hr/><br>
-<a href ="studentNameForm/showForm">New Student Name Form</a>
+Student Name :
+<a href ="studentNameForm/showForm">Add New Student Name Form</a>
 <hr/><br>
-<a href = "studentDepForm/showForm">New Student Department Form</a>
+Student Department : 
+<a href = "studentDepForm/showForm">Add New Student Department Form</a>
 <hr/><br>
-<a href = "student/showForm">New Student Confirmation</a>
+Student Information Form : 
+<a href = "student/showForm">Add New Student Confirmation</a>
+<hr><br>
+Teacher Information Form :
+<a href = "teacher/showForm">Add New Teacher</a>
 </body>
 </html>
