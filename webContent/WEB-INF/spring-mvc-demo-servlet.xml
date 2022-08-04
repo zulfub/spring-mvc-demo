@@ -13,7 +13,7 @@
 
 	<!-- Step 3: Add support for component scanning -->
 	<context:component-scan base-package="com.skuld.springdemo" />
-
+	
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
 
@@ -24,6 +24,11 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
+	<!-- Step 6: Load custom messages from property file -->
+	<bean id="messageSource" 
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resource/message"/>
+	</bean>
 </beans>
 
 
