@@ -15,10 +15,12 @@ public class Teacher {
 	//Validation 
 	@NotNull(message = "is required")
 	@Size(min=1 , max=6 , message = "Name must be between 1-6")
+	@Pattern(regexp = "^[a-zA-Z]*",message = "Number is not allowed in First Name")
 	private String firstName;
 	
 	@NotNull(message = "Can not be Null")
 	@Size(min=3 , message = "min = 3")
+	@Pattern(regexp = "^[a-zA-Z]*",message = "Number is not allowed in Last Name")
 	private String lastName;
 	
 	@NotNull(message = "is required")

@@ -27,7 +27,7 @@
 	<!-- Step 6: Load custom messages from property file -->
 	<bean id="messageSource" 
 		class="org.springframework.context.support.ResourceBundleMessageSource">
-		<property name="basenames" value="resource/message"/>
+		<property name="basenames" value="resources/message"/>
 	</bean>
 </beans>
 

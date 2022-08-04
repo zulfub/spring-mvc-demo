@@ -35,6 +35,9 @@ public class TeacherController {
 	@RequestMapping("/processForm")
 	public String processForm(@Valid @ModelAttribute("teacher") Teacher teacher,BindingResult bindingResult) {
 		//ModelAttribute annotation for access to data
+		//Binding Result Details
+		System.out.println("Binding Result : " + bindingResult );
+		
 		if(bindingResult.hasErrors()) {
 			return "teacher-form";
 		}
