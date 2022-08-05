@@ -21,6 +21,8 @@ Email Address : ${teacher.emailAddress}
 Country :	${teacher.country}
 <hr>
 Free Passes : ${teacher.freePasses}
+<hr>
+Course Code : ${teacher.courseCode}
 <br>
 <hr>
  	<a href="showForm">Form Page</a>

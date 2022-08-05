@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.skuld.springdemo.validator.CourseCode;
+
 public class Teacher {
 
 	//Fields for Class
@@ -23,8 +25,11 @@ public class Teacher {
 	@Pattern(regexp = "^[a-zA-Z]*",message = "Number is not allowed in Last Name")
 	private String lastName;
 	
-	@NotNull(message = "is required")
+	@NotNull(message = "is required")	
 	private String department;
+	
+	@CourseCode(value = "Skuld",message = "start with Skuld")
+	private String courseCode;
 	
 	@NotNull(message = "is required")
 	@Min(value=1,message="Min passes should be greater than 0")
@@ -94,5 +99,15 @@ public class Teacher {
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+	//courseCode
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+	
 
 }
