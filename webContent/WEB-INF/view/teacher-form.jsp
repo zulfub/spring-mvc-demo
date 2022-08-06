@@ -6,7 +6,7 @@
 <style type="text/css">
 	.error {color:red}
 	.error2{color:green}
-	.error3{color:yellow}
+	.error3{color:orange}
 </style>
 </head>
 <body>

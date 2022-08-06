@@ -10,6 +10,7 @@ import javax.validation.constraints.Size;
 
 import com.skuld.springdemo.validator.CourseCode;
 
+
 public class Teacher {
 
 	//Fields for Class
